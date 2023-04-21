@@ -1,0 +1,15 @@
+$primary-color: #ef476f;
+$secondary-color: #ffd166;
+$background-color: #30332e;
+$link-color: #62bbc1;
+$subtitle-color: #fffbfc;
+$drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+
+:export {
+  primaryColor: $primary-color;
+  secondaryColor: $secondary-color;
+  backgroundColor: $background-color;
+  linkColor: $link-color;
+  subtitleColor: $subtitle-color;
+  dropShadow: $drop-shadow;
+}

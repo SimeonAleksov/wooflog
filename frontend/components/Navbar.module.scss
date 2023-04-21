@@ -1,0 +1,28 @@
+@import "../styles/variables.module";
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 2rem;
+  margin: 0.5rem 1rem 0.75rem 1rem;
+  padding-bottom: 1rem;
+
+  &__item {
+    &:after {
+      display:block;
+      content: '';
+      border-bottom: 2px solid $primary-color;
+      transform: scaleX(0);
+      transition: transform 250ms ease-in-out;
+    }
+    &:hover:after {
+      transform: scaleX(1);
+    }
+    &--active {
+      color: $primary-color;
+      border-bottom: 2px solid $primary-color;
+    }
+  }
+}
